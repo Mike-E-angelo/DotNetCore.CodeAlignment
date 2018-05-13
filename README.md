@@ -1,19 +1,21 @@
 ﻿# DotNetCore.CodeAlignment
 
-This example of a [possible code alignment issue in .NET Core](https://github.com/dotnet/coreclr/issues/17932) uses four different machines to demonstrate this issue:
+This example of a [possible code alignment issue in .NET Core](https://github.com/dotnet/coreclr/issues/17932) uses the results from four different machines to demonstrate this issue:
 
 - VM Host Machine
 - VM Guest
 - Surface Pro 3
 - Azure VM: Standard D16s v3 (16 vcpus, 64 GB memory)
 
-The .NET Core console application found in this repository was run on each of the machines above to produce the following output. This application is a simple Benchmark.NET benchmark runner with three cases:
+The .NET Core console application found in this repository was run on each of the machines above to produce the output found below in this document. This console application is a simple Benchmark.NET benchmark runner with three cases:
 
 1. A LINQ select calling `ToArray`.
 1. An array that is filled with the same select used in the first case.
 1. Both benchmark cases defined in 1. and 2.
 
-On all machines, the 3rd and final case that features both benchmarks demonstrates a difference in times that deviates from the results in the first two benchmarks that feature a single benchmark. Do note that the times listed before for this 3rd benchmark for the `VM Guest` are for the first run when the `BenchmarkDotNet.Artifacts` folder is not yet created.  Subsequent runs did match the first two times in this case.
+On all machines, the 3rd and final case that features both benchmarks demonstrates a difference in times that deviates from the results in the first two benchmarks that feature a single benchmark. 
+
+Do note that the times listed for the 3rd benchmark for the `VM Guest` are for the first run when the `BenchmarkDotNet.Artifacts` folder is not yet created.  Subsequent runs did match the first two times in this case.  In all other cases, the first and subsequent runs of the 3rd and final benchmark led to discrepancies.
 
 ### VM Host Machine
 

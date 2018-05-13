@@ -15,7 +15,7 @@ The .NET Core console application found in this repository was run on each of th
 
 On all machines, the 3rd and final case that features both benchmarks demonstrates a difference in times that deviates from the results in the first two benchmarks that feature a single benchmark. 
 
-Do note that the times listed for the 3rd benchmark for the `VM Guest` are for the first run when the `BenchmarkDotNet.Artifacts` folder is not yet created.  Subsequent runs did match the first two times in this case.  In all other cases, the first and subsequent runs of the 3rd and final benchmark led to discrepancies.
+Do note that the times listed for the 3rd benchmark for the `VM Guest` are for the first run when the `BenchmarkDotNet.Artifacts` folder is not yet created.  Subsequent runs on this particular machine did match the first two times in this case.  In all other cases, the first and subsequent runs of the 3rd and final benchmark on all machines led to discrepancies.
 
 ### VM Host Machine
 
@@ -55,9 +55,8 @@ WarmupCount=3
 
 ``` ini
 
-BenchmarkDotNet=v0.10.14, OS=Windows 10.0.14393.2214 (1607/AnniversaryUpdate/Redstone1)
-Intel Core i7-4820K CPU 3.70GHz (Haswell), 1 CPU, 8 logical and 4 physical cores
-Frequency=3613273 Hz, Resolution=276.7574 ns, Timer=TSC
+BenchmarkDotNet=v0.10.14, OS=Windows 10.0.17134
+Intel Core i7-4820K CPU 3.70GHz (Haswell), 1 CPU, 8 logical and 8 physical cores
 .NET Core SDK=2.1.300-rc1-008673
   [Host] : .NET Core 2.1.0-rc1 (CoreCLR 4.6.26426.02, CoreFX 4.6.26426.04), 64bit RyuJIT
 
@@ -87,6 +86,8 @@ WarmupCount=3
 
 ### Surface Pro 3
 
+```
+
 BenchmarkDotNet=v0.10.14, OS=Windows 10.0.17134
 Intel Core i7-4650U CPU 1.70GHz (Haswell), 1 CPU, 4 logical and 2 physical cores
 Frequency=2240907 Hz, Resolution=446.2479 ns, Timer=TSC
@@ -95,6 +96,8 @@ Frequency=2240907 Hz, Resolution=446.2479 ns, Timer=TSC
 
 Toolchain=InProcessToolchain  LaunchCount=1  TargetCount=3
 WarmupCount=3
+
+```
 
 #### Selection: 0
 

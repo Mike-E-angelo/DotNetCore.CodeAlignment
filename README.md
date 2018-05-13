@@ -79,12 +79,12 @@ WarmupCount=3
 
 #### Selection: 2
 
+NOTE: Results listed here in Selection 2 are from first run when the `BenchmarkDotNet.Artifacts` folder is not yet created.  Subsequent runs on this particular machine did match the first two cases.  This is the only machine where this occurred.
+
 | Method |     Mean |    Error |    StdDev | Scaled |  Gen 0 |  Gen 1 | Allocated |
 |------- |---------:|---------:|----------:|-------:|-------:|-------:|----------:|
 |  First | 20.84 us | 1.492 us | 0.0843 us |   1.00 | 7.6294 | 0.8240 |  39.13 KB |
 | Second | 18.61 us | 1.666 us | 0.0942 us |   0.89 | 7.6294 | 0.8240 |  39.09 KB |
-
-NOTE: Results listed here are from first run when the `BenchmarkDotNet.Artifacts` folder is not yet created.  Subsequent runs on this particular result did match the first two cases.  This is the only machine that did this.
 
 ### Surface Pro 3
 

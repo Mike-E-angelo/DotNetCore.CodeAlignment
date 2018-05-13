@@ -15,9 +15,7 @@ The .NET Core console application found in this repository was run on each of th
 
 On all machines, the 3rd and final case demonstrates a difference in result times that deviates in some way from the results achieved in the first two benchmark cases. 
 
-Do note that the times listed for the 3rd benchmark for the `VM Guest` are for the first run when the `BenchmarkDotNet.Artifacts` folder is not yet created.  Subsequent runs on this particular machine did match the first two times in this case.  In all other cases, the first and subsequent runs of the 3rd and final benchmark on all machines led to discrepancies.
-
-Finally, more raw data from the results used in this document [can be found here](RawData.md).
+More raw data from the results used in this document [can be found here](RawData.md).
 
 ### VM Host Machine
 
@@ -85,6 +83,8 @@ WarmupCount=3
 |------- |---------:|---------:|----------:|-------:|-------:|-------:|----------:|
 |  First | 20.84 us | 1.492 us | 0.0843 us |   1.00 | 7.6294 | 0.8240 |  39.13 KB |
 | Second | 18.61 us | 1.666 us | 0.0942 us |   0.89 | 7.6294 | 0.8240 |  39.09 KB |
+
+NOTE: Results listed here are from first run when the `BenchmarkDotNet.Artifacts` folder is not yet created.  Subsequent runs on this particular result did match the first two cases.  This is the only machine that did this.
 
 ### Surface Pro 3
 

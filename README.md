@@ -10,10 +10,10 @@ This example of a [possible code alignment issue in .NET Core](https://github.co
 The .NET Core console application found in this repository was run on each of the machines above to produce the output found below in this document. This console application is a simple Benchmark.NET benchmark runner with three cases:
 
 1. A LINQ select calling `ToArray`.
-1. An array that is filled with the same select used in the first case.
+1. An array that is filled with the same select used in the first case (courtesy of [@mikedn](https://github.com/mikedn) [[link](https://github.com/dotnet/coreclr/issues/17932#issuecomment-388008331)]).
 1. Both benchmark cases defined in 1. and 2.
 
-On all machines, the 3rd and final case that features both benchmarks demonstrates a difference in times that deviates from the results in the first two benchmarks that feature a single benchmark. 
+On all machines, the 3rd and final case that features both benchmarks demonstrates a difference in result times that deviates in some way from the results achieved in the first two benchmark cases. 
 
 Do note that the times listed for the 3rd benchmark for the `VM Guest` are for the first run when the `BenchmarkDotNet.Artifacts` folder is not yet created.  Subsequent runs on this particular machine did match the first two times in this case.  In all other cases, the first and subsequent runs of the 3rd and final benchmark on all machines led to discrepancies.
 

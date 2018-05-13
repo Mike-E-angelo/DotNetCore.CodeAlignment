@@ -13,7 +13,7 @@ The .NET Core console application found in this repository was run on each of th
 1. An array that is filled with the same select used in the first case (courtesy of [@mikedn](https://github.com/mikedn) [[link](https://github.com/dotnet/coreclr/issues/17932#issuecomment-388008331)]).
 1. Both benchmark cases defined in 1. and 2.
 
-On all machines, the 3rd and final case that features both benchmarks demonstrates a difference in result times that deviates in some way from the results achieved in the first two benchmark cases. 
+On all machines, the 3rd and final case demonstrates a difference in result times that deviates in some way from the results achieved in the first two benchmark cases. 
 
 Do note that the times listed for the 3rd benchmark for the `VM Guest` are for the first run when the `BenchmarkDotNet.Artifacts` folder is not yet created.  Subsequent runs on this particular machine did match the first two times in this case.  In all other cases, the first and subsequent runs of the 3rd and final benchmark on all machines led to discrepancies.
 

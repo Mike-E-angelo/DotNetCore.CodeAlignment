@@ -1,6 +1,6 @@
 ﻿# DotNetCore.CodeAlignment
 
-This example of a [possible code alignment issue in .NET Core](https://github.com/dotnet/coreclr/issues/17932) uses the results from four different machines to demonstrate this issue:
+This example of a [possible code alignment issue in .NET Core](https://github.com/dotnet/coreclr/issues/17932) uses the results from four different machines to demonstrate this issue.  These four machines are:
 
 - VM Host Machine
 - VM Guest

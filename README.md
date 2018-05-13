@@ -17,6 +17,8 @@ On all machines, the 3rd and final case that features both benchmarks demonstrat
 
 Do note that the times listed for the 3rd benchmark for the `VM Guest` are for the first run when the `BenchmarkDotNet.Artifacts` folder is not yet created.  Subsequent runs on this particular machine did match the first two times in this case.  In all other cases, the first and subsequent runs of the 3rd and final benchmark on all machines led to discrepancies.
 
+Finally, more raw data from the results used in this document [can be found here](RawData.md).
+
 ### VM Host Machine
 
 ``` ini

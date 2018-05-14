@@ -15,7 +15,11 @@ The .NET Core console application found in this repository was run on each of th
 
 On all machines, the 3rd and final case demonstrates a difference in result times that deviates in some way from the results achieved in the first two benchmark cases. 
 
-More raw data from the results used in this document [can be found here](RawData.md).
+Additional Resources
+
+- More raw data from the results used in this document [can be found here](RawData.md).
+- An alternate version of this application [can be found here](https://github.com/Mike-EEE/DotNetCore.CodeAlignment.Alternate).
+
 
 ### VM Host Machine
 
